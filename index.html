@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrainAIkit – Smarter Tools. Faster Results.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fb;
+      color: #1e1e1e;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #010f25;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    header img {
+      width: 300px;
+    }
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    header nav a:hover,
+    header nav a.active {
+      color: #2a66f2;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      max-width: 800px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 640px;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 0.85rem 1.5rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+    .cta-primary {
+      background-color: #2a66f2;
+      color: #fff;
+    }
+    .cta-primary:hover {
+      background-color: #1f4fd1;
+    }
+    .cta-secondary {
+      background-color: #e4e7ed;
+      color: #1e1e1e;
+    }
+    .cta-secondary:hover {
+      background-color: #d1d5db;
+    }
+    .features, .demo, .signup {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .features h2, .demo h2, .signup h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .features li {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 1rem;
+    }
+    .demo p, .signup p, product-highlight {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    .demo pre, product-highlight {
+      background: #1e1e1e;
+      color: #f1f1f1;
+      text-align: left;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+    .signup input[type="email"] {
+      padding: 0.75rem;
+      width: 300px;
+      max-width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+    .signup button {
+      padding: 0.75rem 1.25rem;
+      background-color: #2a66f2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .signup button:hover {
+      background-color: #1f4fd1;
+    }
+    footer {
+      background: #1e1e1e;
+      color: #ffffff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="BrainAIkit_logo_cropped.png" alt="BrainAIkit Logo" />
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#demo">Demo</a>
+	  <a href="#featuredproduct">Featured Product</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>The Smartest Way to Use AI—Without Writing a Single Prompt</h1>
+    <p>Pre-built AI toolkits for content creation, online dating, and digital productivity. Designed for real people. Built for instant results.</p>
+    <div class="buttons">
+	<a href="brainaikit.gumroad.com/l/TUAPPFF" class="cta-primary" data-gumroad-single="true">Download Now</a>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+      <a href="#" class="cta-secondary">Explore the Kits</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>What You’ll Get with BrainAIkit</h2>
+    <ul>
+      <li>✅ Done-for-you AI prompt kits for instant use</li>
+      <li>✅ Compatible with ChatGPT & other major tools</li>
+      <li>✅ Designed for creators, freelancers & non-tech users</li>
+      <li>✅ Content, productivity & dating kits ready to go</li>
+    </ul>
+  </section>
+
+  <section class="demo" id="demo">
+    <h2>Demo: AI ContentKit Starter Prompt</h2>
+    <p>Here’s an example of a plug-and-play prompt to generate a social media post in seconds:</p>
+    <pre><code>Write a carousel post for Instagram, targeted at freelance copywriters.
+The goal is to inspire them to try AI tools.
+Use a casual tone and keep it short & visual.
+Include the core message: “AI tools are your secret weapon to work less and earn more.”
+Include keywords: AI, productivity, freelance life.
+Add hashtags: #AIForFreelancers #ContentHacks #FreelanceTips.
+End with: “Save this post & tag a freelancer who needs this!”</code></pre>
+  </section>
+  
+    <section class="demo" id="promptpack">
+    <h2>Featured Product: Full Prompt Pack</h2>
+    <p>90 expert-crafted prompts to grow your freelance business with AI — instantly actionable, endlessly reusable.</p>
+    <img src="TUAPPF_cover.png" alt="Full Prompt Pack Cover" style="max-width: 300px; width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin: 20px auto; display: block;">
+    <div class="buttons" style="justify-content: center;">
+      <a href="https://brainaikit.gumroad.com/l/TUAPPFF" class="cta-primary" data-gumroad-single="true">Download Now</a>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+      <a href="#" class="cta-secondary">See All Kits</a>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <h2>Stay in the Loop</h2>
+    <p>Get early access, free templates, and AI tips straight to your inbox.</p>
+    <form action="#" method="POST">
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BrainAIkit. All rights reserved.</p>
+  </footer>
+</body>
+</html>
